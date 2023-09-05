@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: red;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signinButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gIcon {
+  height: 1.5rem;
+  width: fit-content;
+}
+.logo {
+  width: 6rem;
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+} */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.button {
+  margin-top: 50px;
+  height: fit-content;
+  width: fit-content;
+  /* background: red; */
+}
+.highlight {
+  background: #fff;
+  height: 70px;
+  width: 75px;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.top {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+.top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 0 0 50px 0;
+}
+.bottom {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+.bottom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 0 50px 0 0;
+}
